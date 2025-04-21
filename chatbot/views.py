@@ -31,8 +31,8 @@ def clean_output(output):
 def query(message, model):
     hostname = "longleaf.unc.edu"
     port = 22
-    username = "rkosuri"
-    password = "Shreeram2!" 
+    username = ""
+    password = "" 
     job_check_command = "squeue --me | grep interact"
     start_job_command = "salloc -t 1:00:00 -p volta-gpu --mem=10g -N 1 -n 1 --qos gpu_access --gpus=1  --job-name=interactive_gpu"
 
